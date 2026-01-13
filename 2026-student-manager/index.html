@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student manager</h1>
+      <div class="student-input">
+        <input type="text" id="studentInput" placeholder="Student name..." />
+        <input type="number" id="gradeInput" placeholder="Grade (0-100)" />
+        <button onclick="addStudent()">Add Student</button>
+        <button onclick="resetAll()">Reset</button>
+        <button onclick="seedDemo()">Demo</button>
+      </div>
+      <div class="results">
+        <h2>Student list</h2>
+        <ul id="studentList"></ul>
+        <p id="averageDisplay">
+          <strong>Average grade: <span id="averageValue"></span></strong>
+        </p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
